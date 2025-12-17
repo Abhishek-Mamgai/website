@@ -3,83 +3,82 @@
 // ========================================
 // To add or edit products, simply modify the array below.
 // Each product needs: id, name, category, price, priceValue, description, and image.
+// Save your product photos into the `images` folder with the file names used below.
 
 const products = [
-    {
-        id: "pest-1",
-        name: "Premium Crop Pesticide",
-        category: "pesticide",
-        price: "₹750",
-        priceValue: 750,
-        description: "High-quality insecticide for broad-spectrum protection against common crop pests.",
-        image: "images/pesticide-1.jpg",
-        icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
-               </svg>`
-    },
-    {
-        id: "pest-2",
-        name: "Systemic Pesticide",
-        category: "pesticide",
-        price: "₹1,050",
-        priceValue: 1050,
-        description: "Systemic pesticide offering long-lasting protection from sucking and chewing insects.",
-        image: "images/pesticide-2.jpg",
-        icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
-               </svg>`
-    },
-    {
-        id: "fert-1",
-        name: "NPK Fertilizer 19:19:19",
-        category: "fertilizer",
-        price: "₹650",
-        priceValue: 650,
-        description: "Balanced NPK fertilizer for overall vegetative growth and higher yield.",
-        image: "images/fertilizer-1.jpg",
-        icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                <path d="M8 22s-4-4.5-4-10 4-10 4-10"/>
-               </svg>`
-    },
-    {
-        id: "fert-2",
-        name: "Organic Soil Enricher",
-        category: "fertilizer",
-        price: "₹550",
-        priceValue: 550,
-        description: "Organic fertilizer improving soil structure and microbial activity for healthy crops.",
-        image: "images/fertilizer-2.jpg",
-        icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                <path d="M8 22s-4-4.5-4-10 4-10 4-10"/>
-               </svg>`
-    },
-    {
-        id: "bio-1",
-        name: "Bio Plant Growth Promoter",
-        category: "bio",
-        price: "₹480",
-        priceValue: 480,
-        description: "Bio-based growth promoter enhancing root development and nutrient uptake.",
-        image: "images/bio-1.jpg",
-        icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-               </svg>`
-    },
-    {
-        id: "bio-2",
-        name: "Flowering Booster",
-        category: "bio",
-        price: "₹720",
-        priceValue: 720,
-        description: "Special formulation to increase flowering and fruit setting in multiple crops.",
-        image: "images/bio-2.jpg",
-        icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-               </svg>`
-    }
-    // Add more products by copying the structure above.
+  {
+    id: "black-magic",
+    name: "Black Magic",
+    category: "bio",
+    price: "₹800",
+    priceValue: 800,
+    description: "High-quality plant growth stimulant from Unimax Agro Chemicals.",
+    image: "images/black-magic.jpg"
+  },
+  {
+    id: "promax",
+    name: "Promax (Emamectin Benzoate 5% SG)",
+    category: "pesticide",
+    price: "₹950",
+    priceValue: 950,
+    description: "Insecticide / acaricide for effective control of caterpillars and sucking pests.",
+    image: "images/promax.jpg"
+  },
+  {
+    id: "thiomax",
+    name: "ThiomaX (Thiophanate Methyl 70% WP)",
+    category: "fungicide",
+    price: "₹1,100",
+    priceValue: 1100,
+    description: "Systemic fungicide for control of a wide range of fungal diseases.",
+    image: "images/thiomax.jpg"
+  },
+  {
+    id: "nutrimax",
+    name: "Nutri Max",
+    category: "fertilizer",
+    price: "₹650",
+    priceValue: 650,
+    description: "Plant nutrient and yield booster for healthier and stronger crops.",
+    image: "images/nutrimax.jpg"
+  },
+  {
+    id: "mtop",
+    name: "M-TOP (Azoxystrobin 18.2% + Difenoconazole 11.4% SC)",
+    category: "fungicide",
+    price: "₹1,250",
+    priceValue: 1250,
+    description: "Systemic fungicide combination for broad-spectrum disease management.",
+    image: "images/mtop.jpg"
+  },
+  {
+    id: "maxido",
+    name: "Maxido",
+    category: "fungicide",
+    price: "₹1,050",
+    priceValue: 1050,
+    description: "Fungicide formulation for effective protection against major crop diseases.",
+    image: "images/maxido.jpg"
+  },
+  {
+    id: "maxtara",
+    name: "MaxTara",
+    category: "pesticide",
+    price: "₹900",
+    priceValue: 900,
+    description: "Insecticide formulation for protection of cotton and other crops.",
+    image: "images/maxtara.jpg"
+  },
+  {
+    id: "super-potash",
+    name: "Super Potash (Natural Liquid Bio Fertilizer)",
+    category: "fertilizer",
+    price: "₹700",
+    priceValue: 700,
+    description: "Natural liquid bio fertilizer rich in potash for improving crop quality and yield.",
+    image: "images/super-potash.jpg"
+  }
+  // To change prices, edit `price` (text shown) and `priceValue` (number used for totals).
 ];
 
 // ========================================
@@ -676,5 +675,6 @@ document.addEventListener("DOMContentLoaded", () => {
         initOrderSuccessPage();
     }
 });
+
 
 
