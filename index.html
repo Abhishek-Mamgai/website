@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIMAXAGRO Private Limited - Agricultural Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg class="leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        <path d="M8 22s-4-4.5-4-10 4-10 4-10"/>
+                        <path d="M16 22s4-4.5 4-10-4-10-4-10"/>
+                    </svg>
+                    <div>
+                        <h1>UNIMAXAGRO</h1>
+                        <p class="logo-subtitle">Private Limited</p>
+                    </div>
+                </div>
+
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="cart.html" class="nav-link cart-link">Cart <span id="cartCountBadge" class="cart-badge">0</span></a>
+                </nav>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <nav class="nav-mobile" id="mobileMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="cart.html" class="nav-link">Cart</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">UNIMAXAGRO Private Limited</h1>
+            <p class="hero-subtitle">Your Trusted Partner in Agricultural Solutions</p>
+            <p class="hero-text">Providing premium pesticides, fertilizers, and plant growth products to help farmers achieve optimal crop yields</p>
+            <a href="products.html" class="btn btn-primary">Shop Products</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Products</h2>
+                <p>Comprehensive agricultural solutions for modern farming needs</p>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About UNIMAXAGRO</h2>
+                <p class="about-intro">UNIMAXAGRO Private Limited is committed to empowering farmers with high-quality agricultural inputs. We understand the challenges of modern agriculture and provide reliable solutions to help you succeed.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="8" r="6"/>
+                            <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+                        </svg>
+                    </div>
+                    <h3>Quality Assurance</h3>
+                    <p>All our products meet international quality standards and regulatory requirements</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Expert Support</h3>
+                    <p>Our team of agricultural experts provides guidance and technical support</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <h3>Trusted Products</h3>
+                    <p>Proven solutions used by farmers across the region for consistent results</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            <path d="M8 22s-4-4.5-4-10 4-10 4-10"/>
+                        </svg>
+                    </div>
+                    <h3>Sustainable Solutions</h3>
+                    <p>Environmentally responsible products that promote sustainable agriculture</p>
+                </div>
+            </div>
+
+            <div class="commitment-box">
+                <h3>Our Commitment</h3>
+                <p>We are dedicated to supporting agricultural growth through innovative products and exceptional service. Our mission is to contribute to food security and farmer prosperity by delivering effective, safe, and sustainable agricultural solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for product inquiries and information</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Have questions about our products or services? We're here to help. Fill out the inquiry form and we'll get back to you as soon as possible.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                <polyline points="3 7 12 13 21 7"/>
+                            </svg>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:info@unimaxagro.com">info@unimaxagro.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <div>
+                                <h4>Office</h4>
+                                <p>UNIMAXAGRO Private Limited<br>Business Address<br>City, State, PIN Code</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3>Send Us An Inquiry</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <svg class="leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            <path d="M8 22s-4-4.5-4-10 4-10 4-10"/>
+                            <path d="M16 22s4-4.5 4-10-4-10-4-10"/>
+                        </svg>
+                        <div>
+                            <h3>UNIMAXAGRO</h3>
+                            <p>Private Limited</p>
+                        </div>
+                    </div>
+                    <p class="footer-text">Your trusted partner in agricultural solutions, providing quality products for optimal crop growth.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Our Products</h4>
+                    <ul>
+                        <li>Pesticides</li>
+                        <li>Fertilizers</li>
+                        <li>Plant Growth Products</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> UNIMAXAGRO Private Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

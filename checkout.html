@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIMAXAGRO - Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="checkout">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg class="leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        <path d="M8 22s-4-4.5-4-10 4-10 4-10"/>
+                        <path d="M16 22s4-4.5 4-10-4-10-4-10"/>
+                    </svg>
+                    <div>
+                        <h1>UNIMAXAGRO</h1>
+                        <p class="logo-subtitle">Private Limited</p>
+                    </div>
+                </div>
+
+                <nav class="nav-desktop">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="index.html#about" class="nav-link">About Us</a>
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                    <a href="cart.html" class="nav-link cart-link">Cart <span id="cartCountBadge" class="cart-badge">0</span></a>
+                </nav>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <nav class="nav-mobile" id="mobileMenu">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="index.html#about" class="nav-link">About Us</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+                <a href="cart.html" class="nav-link">Cart</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-hero">
+            <div class="container">
+                <h1>Checkout</h1>
+                <p>Select your delivery address and payment method to place your order.</p>
+            </div>
+        </section>
+
+        <section class="checkout-section">
+            <div class="container checkout-layout">
+                <div class="checkout-main">
+                    <!-- Address Section -->
+                    <section class="checkout-block">
+                        <h2>Delivery Address</h2>
+                        <div id="addressesContainer" class="addresses-container">
+                            <!-- Existing addresses loaded by JS -->
+                        </div>
+
+                        <details class="add-address-details">
+                            <summary>Add a new address</summary>
+                            <form id="addressForm" class="address-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="fullName">Full Name *</label>
+                                        <input type="text" id="fullName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phoneNumber">Mobile Number *</label>
+                                        <input type="tel" id="phoneNumber" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="flat">Flat, House no., Building, Company *</label>
+                                    <input type="text" id="flat" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="area">Area, Street, Village *</label>
+                                    <input type="text" id="area" required>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="city">City / District / Town *</label>
+                                        <input type="text" id="city" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="state">State *</label>
+                                        <input type="text" id="state" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pincode">PIN Code *</label>
+                                        <input type="text" id="pincode" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="addressType">Address Type</label>
+                                    <select id="addressType">
+                                        <option value="Home">Home</option>
+                                        <option value="Office">Office</option>
+                                        <option value="Farm">Farm</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-full">Save Address</button>
+                            </form>
+                        </details>
+                    </section>
+
+                    <!-- Payment Section -->
+                    <section class="checkout-block">
+                        <h2>Payment Method</h2>
+                        <p class="muted-text">Choose a secure online payment option. Cash on delivery is not available.</p>
+                        <div class="payment-options" id="paymentOptions">
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod" value="upi" checked>
+                                <div class="payment-option-body">
+                                    <h3>UPI</h3>
+                                    <p>Pay using UPI apps (PhonePe, Google Pay, Paytm, etc.)</p>
+                                    <div class="payment-extra">
+                                        <label for="upiId">UPI ID</label>
+                                        <input type="text" id="upiId" placeholder="yourname@upi">
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod" value="card">
+                                <div class="payment-option-body">
+                                    <h3>Credit / Debit Card</h3>
+                                    <p>All major Visa, Mastercard, and RuPay cards accepted.</p>
+                                    <div class="payment-extra">
+                                        <label for="cardNumber">Card Number</label>
+                                        <input type="text" id="cardNumber" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label for="cardExpiry">Expiry</label>
+                                                <input type="text" id="cardExpiry" placeholder="MM/YY">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="cardCvv">CVV</label>
+                                                <input type="password" id="cardCvv" maxlength="3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod" value="netbanking">
+                                <div class="payment-option-body">
+                                    <h3>Net Banking</h3>
+                                    <p>Pay directly from your bank account using net banking.</p>
+                                    <div class="payment-extra">
+                                        <label for="bankName">Select Bank</label>
+                                        <select id="bankName">
+                                            <option value="">Select your bank</option>
+                                            <option value="SBI">State Bank of India</option>
+                                            <option value="HDFC">HDFC Bank</option>
+                                            <option value="ICICI">ICICI Bank</option>
+                                            <option value="AXIS">Axis Bank</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </section>
+                </div>
+
+                <aside class="checkout-summary" id="checkoutSummary">
+                    <!-- Summary loaded by JS -->
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <svg class="leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            <path d="M8 22s-4-4.5-4-10 4-10 4-10"/>
+                            <path d="M16 22s4-4.5 4-10-4-10-4-10"/>
+                        </svg>
+                        <div>
+                            <h3>UNIMAXAGRO</h3>
+                            <p>Private Limited</p>
+                        </div>
+                    </div>
+                    <p class="footer-text">Your trusted partner in agricultural solutions, providing quality products for optimal crop growth.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Need Help?</h4>
+                    <ul>
+                        <li>Email: info@unimaxagro.com</li>
+                        <li>Phone: +1 (234) 567-890</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> UNIMAXAGRO Private Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

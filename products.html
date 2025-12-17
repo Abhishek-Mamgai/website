@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIMAXAGRO - Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="products">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg class="leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        <path d="M8 22s-4-4.5-4-10 4-10 4-10"/>
+                        <path d="M16 22s4-4.5 4-10-4-10-4-10"/>
+                    </svg>
+                    <div>
+                        <h1>UNIMAXAGRO</h1>
+                        <p class="logo-subtitle">Private Limited</p>
+                    </div>
+                </div>
+
+                <nav class="nav-desktop">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                    <a href="products.html" class="nav-link active">Products</a>
+                    <a href="index.html#about" class="nav-link">About Us</a>
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                    <a href="cart.html" class="nav-link cart-link">Cart <span id="cartCountBadge" class="cart-badge">0</span></a>
+                </nav>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <nav class="nav-mobile" id="mobileMenu">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link active">Products</a>
+                <a href="index.html#about" class="nav-link">About Us</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+                <a href="cart.html" class="nav-link">Cart</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-hero products-hero">
+            <div class="container">
+                <h1>Shop Agricultural Products</h1>
+                <p>High-quality pesticides, fertilizers, and bio products for every crop and season.</p>
+            </div>
+        </section>
+
+        <section class="products products-page">
+            <div class="container">
+                <div class="products-toolbar">
+                    <div>
+                        <h2>All Products</h2>
+                        <p>Select the products you need and add them to your cart.</p>
+                    </div>
+                    <div class="products-actions">
+                        <select id="categoryFilter">
+                            <option value="all">All Categories</option>
+                            <option value="pesticide">Pesticides</option>
+                            <option value="fertilizer">Fertilizers</option>
+                            <option value="bio">Bio / Plant Growth</option>
+                        </select>
+                        <a href="cart.html" class="btn btn-secondary">Go to Cart</a>
+                    </div>
+                </div>
+
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products loaded by JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <svg class="leaf-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            <path d="M8 22s-4-4.5-4-10 4-10 4-10"/>
+                            <path d="M16 22s4-4.5 4-10-4-10-4-10"/>
+                        </svg>
+                        <div>
+                            <h3>UNIMAXAGRO</h3>
+                            <p>Private Limited</p>
+                        </div>
+                    </div>
+                    <p class="footer-text">Your trusted partner in agricultural solutions, providing quality products for optimal crop growth.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Need Help?</h4>
+                    <ul>
+                        <li>Email: info@unimaxagro.com</li>
+                        <li>Phone: +1 (234) 567-890</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> UNIMAXAGRO Private Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
