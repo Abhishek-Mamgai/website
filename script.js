@@ -85,7 +85,7 @@ const products = [
 // CONTACT EMAIL CONFIGURATION
 // ========================================
 // Change this to your actual email address
-const CONTACT_EMAIL = "info@unimaxagro.com";
+const CONTACT_EMAIL = "abhimamgai5@gmail.com";
 
 // ========================================
 // UTILITIES & STORAGE HELPERS
@@ -675,6 +675,7 @@ document.addEventListener("DOMContentLoaded", () => {
         initOrderSuccessPage();
     }
 });
+
 
 
 
