@@ -1,0 +1,9 @@
+Add your product images in this folder.
+For example:
+- pesticides: pesticide-1.jpg, pesticide-2.jpg, ...
+- fertilizers: fertilizer-1.jpg, fertilizer-2.jpg, ...
+- bio products: bio-1.jpg, bio-2.jpg, ...
+
+Update the image paths in `script.js` to match your actual file names.
+
+
